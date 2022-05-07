@@ -10,13 +10,10 @@ https://servicodados.ibge.gov.br/api/v1/localidades/mesorregioes/3513/municipios
 Com esses dados, gerar um data frame e a partir dele uma temp view. Ex: "cities"
 
 Utilizando os nomes das cidades, deverão ser consultados os dados de previsão de tempo para cada cidade. Para realizar essa consulta, poderá ser utilizada qualquer uma das APIs informadas no link abaixo.
-
-Public APIs - Wather
-
+Public APIs - Wather <https://github.com/public-apis/public-apis#weather>
 Obs.: Para algumas, pode ser necessário cadastrar-se para acessar sua API Key. Mas nenhuma delas deve precisar cadastrar cartão de crédito ou adicionar qualquer valor monetário para utilizar. Caso alguma solicite, basta optar por outra.
 
 Com os dados consultados, gerar um data frame e partir dele outra temp view. Ex: "forecasts"
-
 Com as temp views geradas, utilizar Spark SQL para criar queries e gerar data frames das seguintes tabelas:
 
 Tabela 1: dados de previsão do tempo para os próximos cinco dias, para cada data e cidade consultadas. As colunas dessa tabela serão:
@@ -58,7 +55,11 @@ Obs.: Os valores da coluna "VaiChover" deverá ser "Sim" ou "Não". E a coluna "
 Tabela 2: quantidade de dias com chuva e sem chuva para os dias consultados, para cada data consultada. Colunas:
 
 Cidade
+
 QtdDiasVaiChover
+
 QtdDiasNaoVaiChover
+
 TotalDiasMapeados
+
 Essas tabelas deverão ser exportadas em formado CSV e entregue no final do desafio.
